@@ -32,9 +32,9 @@
 
 ### 部署步骤
 
-1.修改数据库url及密码.
-2.创建数据库,执行建库脚本命令.
-3.修改application.yml中端口号.
-4.修改小程序中appid和servletId，修改请求url.
-5.将小程序dist/wx中的代码上传到腾讯平台审核发布./将后台代码打包为war文件通过ftp传输到tomcat/weapp中./将前端dist代码上传到ngnix中.
-5.修改Tomcat配置的端口号,及Nginx中配置端口号.
+1. 修改数据库url及密码.
+2. 创建数据库,执行建库脚本命令.
+3. 修改application.yml中端口号.
+4. 修改小程序中appid和servletId，修改请求url.
+5. 将小程序dist/wx中的代码上传到腾讯平台审核发布./将后台代码打包为war文件通过ftp传输到tomcat/weapp中./将前端dist代码上传到ngnix中.
+6. 修改Tomcat配置的端口号,及Nginx中配置端口号.
