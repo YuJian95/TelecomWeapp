@@ -1,2 +1,2 @@
 # BookTeleComService
-一个电信报装小程序,含web后台管理系统
+一个电信预约报装小程序的web后台管理系统
