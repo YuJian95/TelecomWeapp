@@ -1,0 +1,19 @@
+<template name="53f1aa2e">
+  <view class="_div data-v-3e06b535 container">
+    <view class="_div data-v-3e06b535 storeInfo">
+      <image bindtap="handleProxy" class="_img data-v-3e06b535 storeInfo-avatar" src="/static/images/QRcode-active.png" background-size="cover" alt data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+      <view class="_div data-v-3e06b535 storeMessage">
+        <view class="_p data-v-3e06b535 name">{{store.storeName}}</view>
+        <view class="_p data-v-3e06b535 info">{{store.region}}</view>
+        <view class="_p data-v-3e06b535 info">{{store.phone}}</view>
+      </view>
+    </view>
+    <view bindtap="handleProxy" data-id="{{item.id}}" data-name="{{item.name}}" data-period="{{item.period}}" data-price="{{item.price}}" class="_div data-v-3e06b535 product" wx:key="index" key="{{index}}" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{productList}}" wx:for-index="index" wx:for-item="item">
+      <wux-cell-group class="_wux-cell-group data-v-3e06b535">
+        <wux-cell hover-class="none" extra="{{item.name}}" class="_wux-cell data-v-3e06b535">{{item.character_1}}</wux-cell>
+        <wux-cell hover-class="none" extra="{{item.price +' / '+ item.period}}" class="_wux-cell data-v-3e06b535">{{item.character_2}}</wux-cell>
+        <wux-cell hover-class="none" extra="马上预约" class="_wux-cell data-v-3e06b535">{{item.character_3}}</wux-cell>
+      </wux-cell-group>
+    </view>
+  </view>
+</template>

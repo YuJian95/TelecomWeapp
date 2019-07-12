@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/me/main",
+    "pages/userInfo/main",
+    "pages/order/main",
+    "pages/loginShop/main",
+    "pages/booking/main",
+    "pages/orderDetails/main",
+    "pages/shopInfo/main",
+    "pages/shop/main",
+    "pages/QRcode/main",
+    "pages/myOrder/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "预约",
+        "pagePath": "pages/index/main",
+        "iconPath": "static/tabs/Booking.png",
+        "selectedIconPath": "static/tabs/Booking-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/me/main",
+        "iconPath": "static/tabs/me.png",
+        "selectedIconPath": "static/tabs/me-active.png"
+      }
+    ],
+    "items": [
+      {
+        "name": "预约",
+        "pagePath": "pages/index/main",
+        "icon": "static/tabs/Booking.png",
+        "activeIcon": "static/tabs/Booking-active.png"
+      },
+      {
+        "name": "我的",
+        "pagePath": "pages/me/main",
+        "icon": "static/tabs/me.png",
+        "activeIcon": "static/tabs/me-active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "usingComponents": {
+    "wux-search-bar": "../static/wux/search-bar/index",
+    "wux-cell": "../static/wux/cell/index",
+    "wux-checkbox-group": "../static/wux/checkbox-group/index",
+    "wux-checkbox": "../static/wux/checkbox/index",
+    "wux-input": "../static/wux/input/index",
+    "wux-cell-group": "../static/wux/cell-group/index",
+    "wux-textarea": "../static/wux/textarea/index",
+    "wux-vcode": "../static/wux/vcode/index",
+    "wux-button": "../static/wux/button/index",
+    "wux-wing-blank": "../static/wux/wing-blank/index",
+    "wux-white-space": "../static/wux/white-space/index",
+    "wux-cascader": "../static/wux/cascader/index",
+    "wux-timeline-item": "../static/wux/timeline-item/index",
+    "wux-timeline": "../static/wux/timeline/index",
+    "wux-qrcode": "../static/wux/qrcode/index",
+    "wux-fab-button": "../static/wux/floating-button/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

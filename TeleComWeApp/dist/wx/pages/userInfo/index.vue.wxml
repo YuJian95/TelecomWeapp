@@ -1,0 +1,28 @@
+<template name="af3ba668">
+  <view class="_div data-v-58cf3f98 container">
+    <view class="_div data-v-58cf3f98 logo">
+      <open-data class="_open-data data-v-58cf3f98 avatarUrl" type="userAvatarUrl"></open-data> <button bindtap="handleProxy" wx:if="{{isEditShow}}" class="_button data-v-58cf3f98 btn" data-eventid="{{'0'}}" data-comkey="{{$k}}">编辑</button>
+    </view>
+    <view class="_div data-v-58cf3f98 info">
+      <wux-cell-group title="基本信息" class="_wux-cell-group data-v-58cf3f98">
+        <wux-cell class="_wux-cell data-v-58cf3f98">
+          <wux-input disabled="{{isEdit}}" bindchange="handleProxy" controlled label="姓名:" value="{{user.nickName}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_wux-input data-v-58cf3f98"></wux-input>
+        </wux-cell>
+        <wux-cell class="_wux-cell data-v-58cf3f98">
+          <wux-input disabled="{{isEdit}}" bindchange="handleProxy" controlled label="手机:" value="{{user.phone}}" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_wux-input data-v-58cf3f98"></wux-input>
+        </wux-cell>
+        <wux-cell class="_wux-cell data-v-58cf3f98">
+          <wux-input disabled="{{isEdit}}" bindchange="handleProxy" controlled label="地区" value="{{user.region}}" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_wux-input data-v-58cf3f98"></wux-input>
+        </wux-cell>
+      </wux-cell-group>
+      <wux-cell-group title="详细地址" class="_wux-cell-group data-v-58cf3f98">
+        <wux-cell class="_wux-cell data-v-58cf3f98">
+          <wux-textarea bindchange="handleProxy" disabled="{{isEdit}}" controlled row="2" cursorSpacing="80" value="{{user.address}}" placeholder="请输入详细地址" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_wux-textarea data-v-58cf3f98"></wux-textarea>
+        </wux-cell>
+      </wux-cell-group>
+    </view>
+    <view class="_div data-v-58cf3f98">
+      <wux-wing-blank wx:if="{{isSubmitShow}}" class="_wux-wing-blank data-v-58cf3f98"><button bindtap="handleProxy" style="margin: 5px;background-color: #1296db" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_button data-v-58cf3f98">修改</button></wux-wing-blank>
+    </view>
+  </view>
+</template>

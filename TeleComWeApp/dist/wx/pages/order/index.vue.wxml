@@ -1,0 +1,17 @@
+<template name="044dfbd2">
+  <view class="_div data-v-5dd56a76 container">
+    <wux-search-bar bindfocus="handleProxy" bindchange="handleProxy" bindblur="handleProxy" placeholder="输入客户名、电话" controlled data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-search-bar data-v-5dd56a76"></wux-search-bar>
+    <view class="_div data-v-5dd56a76 search-result">
+      <bolck wx:if="{{isSearch}}" bindtap="handleProxy" data-id="{{item.id}}" wx:key="item.id" key="{{item.id}}" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{result}}" wx:for-index="index" wx:for-item="item" class="_bolck data-v-5dd56a76">
+        <view style="margin: 3px" class="_p data-v-5dd56a76">{{item.userName}}-{{item.phone}}</view>
+      </bolck>
+    </view>
+    <view class="_div data-v-5dd56a76 orderList">
+      <view class="_div data-v-5dd56a76 order" bindtap="handleProxy" data-id="{{item.id}}" wx:key="index" key="{{index}}" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
+        <wux-cell hover-class="none" extra="{{item.userName}}" class="_wux-cell data-v-5dd56a76">状态：{{item.orderStatus}}</wux-cell>
+        <wux-cell hover-class="none" extra="查看详情" class="_wux-cell data-v-5dd56a76">创建日期：{{item.createDate}}</wux-cell>
+      </view>
+      <wux-cell-group wx:if="{{isNoData}}" label="你还没有订单哦,请加油呀。" class="_wux-cell-group data-v-5dd56a76"></wux-cell-group>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,17 @@
+<template name="393bc3f0">
+  <view class="_div data-v-7be1ee36 container">
+    <view class="_div data-v-7be1ee36">
+      <form class="_form data-v-7be1ee36">
+        <wux-cell-group title="商店登录" class="_wux-cell-group data-v-7be1ee36">
+          <wux-cell class="_wux-cell data-v-7be1ee36">
+            <wux-input bindchange="handleProxy" label="账号：" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-input data-v-7be1ee36"></wux-input>
+          </wux-cell>
+          <wux-cell class="_wux-cell data-v-7be1ee36">
+            <wux-input bindchange="handleProxy" label="密码：" password data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_wux-input data-v-7be1ee36"></wux-input>
+          </wux-cell>
+          <view class="_div data-v-7be1ee36 btn"><button bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-7be1ee36">登录</button></view>
+        </wux-cell-group>
+      </form>
+    </view>
+  </view>
+</template>

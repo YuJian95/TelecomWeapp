@@ -1,0 +1,25 @@
+<template name="78249692">
+  <view class="_div data-v-745ac783 container">
+    <wux-form class="_wux-form data-v-745ac783">
+      <wux-cell-group title="商店信息" class="_wux-cell-group data-v-745ac783">
+        <wux-cell class="_wux-cell data-v-745ac783">
+          <wux-input disabled="{{isEdit}}" label="名称：" controlled bindchange="handleProxy" placeholder="请输入名字" value="{{store.storeName}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-input data-v-745ac783"></wux-input>
+        </wux-cell>
+        <wux-cell class="_wux-cell data-v-745ac783">
+          <wux-input disabled="{{isEdit}}" label="手机：" controlled bindchange="handleProxy" placeholder="请输入手机" value="{{store.phone}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_wux-input data-v-745ac783"></wux-input>
+        </wux-cell>
+        <wux-cell class="_wux-cell data-v-745ac783">
+          <wux-input disabled="{{isEdit}}" label="地区：" controlled bindchange="handleProxy" placeholder="请输入地区" value="{{store.region}}" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_wux-input data-v-745ac783"></wux-input>
+        </wux-cell>
+      </wux-cell-group>
+      <wux-cell-group title="详细地址" class="_wux-cell-group data-v-745ac783">
+        <wux-cell class="_wux-cell data-v-745ac783">
+          <wux-textarea disabled="{{isEdit}}" placeholder="请输入详细地址" controlled bindchange="handleProxy" value="{{store.address}}" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_wux-textarea data-v-745ac783"></wux-textarea>
+        </wux-cell>
+      </wux-cell-group> <button bindtap="handleProxy" wx:if="{{isEditShow}}" class="_button data-v-745ac783 btn" data-eventid="{{'4'}}" data-comkey="{{$k}}">编辑</button>
+      <view wx:if="{{isSubmitShow}}" class="_div data-v-745ac783 btn">
+        <wux-button block bindtap="handleProxy" type="calm" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_wux-button data-v-745ac783">修改</wux-button>
+      </view>
+    </wux-form>
+  </view>
+</template>

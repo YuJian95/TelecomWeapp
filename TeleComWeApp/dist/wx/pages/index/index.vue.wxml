@@ -1,0 +1,19 @@
+<template name="4ecce2ca">
+  <view class="_div data-v-a854516e container">
+    <image class="_img data-v-a854516e fab-button fab-button-local" bindtap="handleProxy" src="/static/images/scan-active.png" alt data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+    <wux-search-bar bindfocus="handleProxy" bindchange="handleProxy" bindblur="handleProxy" placeholder="输入店名、地区、地址" controlled data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_wux-search-bar data-v-a854516e"></wux-search-bar>
+    <view class="_div data-v-a854516e search-result">
+      <bolck wx:if="{{isSearch}}" bindtap="handleProxy" data-id="{{item.id}}" wx:key="item.id" key="{{item.id}}" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{result}}" wx:for-index="index" wx:for-item="item" class="_bolck data-v-a854516e">
+        <view style="margin: 3px" class="_p data-v-a854516e">{{item.storeName}}</view>
+      </bolck>
+    </view>
+    <view class="_div data-v-a854516e shopInfo" bindtap="handleProxy" data-id="{{item.id}}" wx:key="item.id" key="{{item.id}}" data-eventid="{{'3_'+index}}" data-comkey="{{$k}}" wx:for="{{storeList}}" wx:for-index="index" wx:for-item="item">
+      <image class="_img data-v-a854516e shopInfo-avatar" src="/static/images/user.png" background-size="cover" alt></image>
+      <view class="_div data-v-a854516e shopMessage">
+        <view class="_p data-v-a854516e name">{{item.storeName}}</view>
+        <view class="_p data-v-a854516e info">{{item.region}}</view>
+        <view class="_p data-v-a854516e info">{{item.phone}}</view>
+      </view>
+    </view>
+  </view>
+</template>

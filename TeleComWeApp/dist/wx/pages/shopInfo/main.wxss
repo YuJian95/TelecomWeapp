@@ -1,0 +1,9 @@
+
+.container.data-v-745ac783 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.btn.data-v-745ac783 {
+  margin: 40rpx 20rpx;
+}

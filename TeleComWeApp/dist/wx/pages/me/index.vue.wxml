@@ -1,0 +1,22 @@
+<template name="6f159f6a">
+  <view class="_div data-v-58d6de57 me-container">
+    <view wx:if="{{isShow}}" class="_div data-v-58d6de57 userInfo">
+      <open-data class="_open-data data-v-58d6de57 userInfo-avatar" type="userAvatarUrl"></open-data>
+      <view class="_div data-v-58d6de57 userMessage">
+        <view class="_p data-v-58d6de57 userName">{{user.nickName}}</view>
+        <view class="_p data-v-58d6de57 address">{{user.region}}</view>
+      </view>
+      <view wx:if="{{isStore}}" class="_div data-v-58d6de57">
+        <wux-cell thumb="/static/images/info-active.png" title="商店信息" is-link url="/pages/shopInfo/main" open-type="navigateTo" class="_wux-cell data-v-58d6de57"></wux-cell>
+        <wux-cell thumb="/static/images/Booking-history-active.png" title="商店订单" is-link url="/pages/order/main" open-type="navigateTo" class="_wux-cell data-v-58d6de57"></wux-cell>
+        <wux-cell thumb="/static/images/exit-active.png" title="退出登录" bindtap="handleProxy" is-link url="/pages/me/main" open-type="navigateTo" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-cell data-v-58d6de57"></wux-cell>
+      </view>
+      <view wx:else class="_div data-v-58d6de57">
+        <wux-cell thumb="/static/images/info-active.png" title="我的信息" is-link url="/pages/userInfo/main" open-type="navigateTo" class="_wux-cell data-v-58d6de57"></wux-cell>
+        <wux-cell thumb="/static/images/Booking-history-active.png" title="我的订单" is-link url="/pages/myOrder/main" open-type="navigateTo" class="_wux-cell data-v-58d6de57"></wux-cell>
+        <wux-cell thumb="/static/images/password-active.png" title="商店登录" is-link url="/pages/loginShop/main" open-type="navigateTo" class="_wux-cell data-v-58d6de57"></wux-cell>
+      </view>
+    </view>
+    <view wx:else class="_div data-v-58d6de57 userInfo-beforeLogin"><button class="_button data-v-58d6de57 btn" open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">点击登录</button></view>
+  </view>
+</template>

@@ -1,0 +1,13 @@
+
+.container.data-v-03893f0e {
+  display: flex;
+  height: 100%;
+}
+.orderList.data-v-03893f0e {
+  margin: 20rpx;
+}
+.order.data-v-03893f0e {
+  margin: 30rpx 10rpx;
+  border: #1296db solid 4rpx;
+  border-radius: 14rpx;
+}

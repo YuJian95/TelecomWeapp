@@ -1,0 +1,9 @@
+
+.container.data-v-216bb7d3 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.status.data-v-216bb7d3 {
+  margin-top: 40rpx;
+}

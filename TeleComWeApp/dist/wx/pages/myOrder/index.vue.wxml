@@ -1,0 +1,10 @@
+<template name="c0c547ea">
+  <view class="_div data-v-03893f0e container">
+    <view class="_div data-v-03893f0e orderList">
+      <view class="_div data-v-03893f0e order" bindtap="handleProxy" data-id="{{item.id}}" wx:key="index" key="{{index}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
+        <wux-cell hover-class="none" extra="{{item.userName}}" class="_wux-cell data-v-03893f0e">状态：{{item.orderStatus}}</wux-cell>
+        <wux-cell hover-class="none" extra="查看详情" class="_wux-cell data-v-03893f0e">创建日期：{{item.createDate}}</wux-cell>
+      </view>
+    </view>
+  </view>
+</template>

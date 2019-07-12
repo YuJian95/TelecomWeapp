@@ -1,0 +1,38 @@
+<template name="2215a2bc">
+  <view class="_div data-v-4d933310 container">
+    <wux-cell-group title="套餐信息" class="_wux-cell-group data-v-4d933310">
+      <wux-cell hover-class="none" controlled title="名称：" extra="{{productName}}" class="_wux-cell data-v-4d933310"></wux-cell>
+      <wux-cell hover-class="none" controlled title="价格：" class="_wux-cell data-v-4d933310">
+        <view slot="footer" style="margin-left: 5px" class="_view data-v-4d933310">{{productPrice}} ￥/ {{period}}</view>
+      </wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="客户信息" class="_wux-cell-group data-v-4d933310">
+      <wux-cell class="_wux-cell data-v-4d933310">
+        <wux-input label="姓名：" bindchange="handleProxy" controlled value="{{user.nickName}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-input data-v-4d933310"></wux-input>
+      </wux-cell>
+      <wux-cell class="_wux-cell data-v-4d933310">
+        <wux-input label="手机：" type="number" bindchange="handleProxy" error="{{error}}" controlled value="{{user.phone}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_wux-input data-v-4d933310"></wux-input>
+      </wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="详细地址" class="_wux-cell-group data-v-4d933310">
+      <wux-cell class="_wux-cell data-v-4d933310">
+        <wux-textarea bindchange="handleProxy" controlled row="2" cursorSpacing="80" value="{{user.address}}" placeholder="请输入详细地址" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_wux-textarea data-v-4d933310"></wux-textarea>
+      </wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="备注信息" class="_wux-cell-group data-v-4d933310">
+      <wux-cell class="_wux-cell data-v-4d933310">
+        <wux-textarea bindchange="handleProxy" row="2" cursorSpacing="80" placeholder="请输入备注信息" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_wux-textarea data-v-4d933310"></wux-textarea>
+      </wux-cell>
+      <wux-cell class="_wux-cell data-v-4d933310">
+        <wux-input label="验证码：" placeholder="请输入" class="_wux-input data-v-4d933310">
+          <view slot="footer" style="margin-left: 5px" class="_view data-v-4d933310">
+            <wux-vcode controlled canvas-id="custom-canvas" bg-color="#e6f6ff" height="30" width="80" num="4" font-color="#165189" haspoint="false" hasline="false" bindchange="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_wux-vcode data-v-4d933310"></wux-vcode>
+          </view>
+        </wux-input>
+      </wux-cell>
+    </wux-cell-group>
+    <view class="_div data-v-4d933310 btn">
+      <wux-button controlled bindtap="handleProxy" block type="calm" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_wux-button data-v-4d933310">预定</wux-button>
+    </view>
+  </view>
+</template>

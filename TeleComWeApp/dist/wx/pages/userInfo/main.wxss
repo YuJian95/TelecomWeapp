@@ -1,0 +1,23 @@
+
+.container.data-v-58cf3f98 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.logo.data-v-58cf3f98 {
+  height: 200rpx;
+}
+.avatarUrl.data-v-58cf3f98 {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx 80rpx 60rpx 20rpx;
+  float: left;
+  border-radius: 50%;
+}
+.info.data-v-58cf3f98 {
+  margin: 20rpx;
+}
+.btn.data-v-58cf3f98 {
+  float: right;
+  margin: 40rpx;
+}

@@ -1,0 +1,9 @@
+<template name="7a9f677e">
+  <view class="_div data-v-db70ba66 container">
+    <wux-cell-group title="商店二维码" class="_wux-cell-group data-v-db70ba66"></wux-cell-group>
+    <view class="_div data-v-db70ba66 qrcode">
+      <wux-qrcode id="qrcode" wux-class="qrcode" data="{{value}}" width="200" height="200" class="_wux-qrcode data-v-db70ba66"></wux-qrcode>
+    </view>
+    <wux-cell-group label="提示：主页扫描即可跳转到商店首页。" class="_wux-cell-group data-v-db70ba66"></wux-cell-group>
+  </view>
+</template>

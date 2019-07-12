@@ -1,0 +1,26 @@
+<template name="b8ed46f2">
+  <view class="_div data-v-216bb7d3 container">
+    <wux-cell-group title="订单状态" class="_wux-cell-group data-v-216bb7d3">
+      <wux-cell class="_wux-cell data-v-216bb7d3">
+        <view class="_div data-v-216bb7d3 status">
+          <wux-timeline pending class="_wux-timeline data-v-216bb7d3">
+            <wux-timeline-item wx:if="{{order.createDate}}" content="{{order.createDate}}" class="_wux-timeline-item data-v-216bb7d3"></wux-timeline-item>
+            <wux-timeline-item wx:if="{{order.updateDate}}" content="{{order.updateDate}}" class="_wux-timeline-item data-v-216bb7d3"></wux-timeline-item>
+            <wux-timeline-item wx:if="{{order.finishDate}}" content="{{order.finishDate}}" class="_wux-timeline-item data-v-216bb7d3"></wux-timeline-item>
+          </wux-timeline>
+        </view>
+      </wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="客户信息" class="_wux-cell-group data-v-216bb7d3">
+      <wux-cell class="_wux-cell data-v-216bb7d3">姓名：{{order.userName}}</wux-cell>
+      <wux-cell class="_wux-cell data-v-216bb7d3">手机：{{order.phone}}</wux-cell>
+      <wux-cell class="_wux-cell data-v-216bb7d3">地址：{{order.address}}</wux-cell>
+      <wux-cell class="_wux-cell data-v-216bb7d3">备注：{{order.note}}</wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="订单信息" class="_wux-cell-group data-v-216bb7d3">
+      <wux-cell class="_wux-cell data-v-216bb7d3">套餐：{{product.name}}({{product.character_1}})</wux-cell>
+      <wux-cell class="_wux-cell data-v-216bb7d3">特性：{{product.character_2}}+{{product.character_3}}</wux-cell>
+      <wux-cell class="_wux-cell data-v-216bb7d3">收费：{{product.price}}/{{product.period}}</wux-cell>
+    </wux-cell-group>
+  </view>
+</template>
